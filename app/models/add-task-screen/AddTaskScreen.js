@@ -5,7 +5,7 @@ import AddTaskScreenView from '../../views/add-task-screen/AddTaskScreenView';
 import { addTask } from '../../utils/CommonFunctions';
 
 const AddTaskScreen = ({ navigation }) => {
-  const { Tasks, handleTasks } = useContext(TasksContext);
+  const { Tasks } = useContext(TasksContext);
   // const { Tasks } = useContext(TasksContext);
   // console.log('Task', Tasks);
   const [ task, setTask ] = useState('');

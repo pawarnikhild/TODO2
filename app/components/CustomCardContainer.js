@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
     borderRadius: 8,
+    elevation: 5,
     // shadowColor: 'black',
     // shadowOffset: { width: 20, height: 20 },
     // shadowRadius: 0,
     // shadowOpacity: 0,
     // backgroundColor: 'white',
-    elevation: 5,
   },
 });

@@ -70,7 +70,8 @@ Stithi -																Stithi
 - Context useContext purn samjun ghene(agodar thapacha video baghun Web Dev Simplified cha video baghne ani official site pn baghene)
 - random id generate karaych baghne
 - try ani catch baghne task add hotana succes ani failure sathi toast msg vaprtana he lagal
-
+- addTask function madhe apan object tayar kartana value pass karat ahe tyaivaji apan empty object tayar karun tyat value takun te push karu shakto0000
+- sortTask function darveles screen focus zalyavr run hot ahe tyamule app slow hoil te jevva ekhad task add zal trch run hoil as baghne
 
 how to use repeted common function in react native
 https://stackoverflow.com/questions/42690202/in-react-native-how-to-reuse-functions
@@ -95,57 +96,118 @@ unmountOnBlur kam karat nahi
 task{ id, name, date, status }
 code githubla push karne darveles tyasathi command lihine
 
-
-
-
-       modified:   App.js
-        modified:   TODO2.txt
-        new file:   app/components/CustomButton.js
-        new file:   app/components/CustomCardContainer.js
-        new file:   app/components/CustomInput.js
-        new file:   app/components/DatePicker.js
-        new file:   app/components/TaskCard.js
-        new file:   app/context/ColorContext.js
-        new file:   app/context/TasksContext.js
-        new file:   app/experiments/BoilerPlates.js
-        new file:   app/experiments/CallAndTest.js
-        new file:   app/experiments/StateExperiment.js
-        new file:   app/models/add-task-screen/AddTaskScreen.js
-        modified:   app/models/completed-screen/CompletedScreen.js
-        modified:   app/models/overdue-screen/OverdueScreen.js
-        modified:   app/models/pending-screen/PendingScreen.js
-        modified:   app/models/splash-screen/SplashScreen.js
-        modified:   app/routes/MainStackNavigation.js
-        modified:   app/routes/MainTabNavigation.js
-        new file:   app/routes/SubStackNavigation.js
-        modified:   app/styles/GlobalStyles.js
-        new file:   app/styles/add-task-screen/AddTaskScreenStyle.js
-        modified:   app/styles/pending-screen/PendingScreenStyle.js
-        new file:   app/utils/CommonFunctions.js
-        new file:   app/utils/StyleConstants.js
-        new file:   app/views/add-task-screen/AddTaskScreenView.js
-        modified:   app/views/completed-screen/CompletedScreenView.js
-        modified:   app/views/overdue-screen/OverdueScreenView.js
-        modified:   app/views/pending-screen/PendingScreenView.js
-        modified:   package-lock.json
-        modified:   package.json
-        modified:   yarn.lock
-		
-		app/context/ app/experiments/ app/routes/ app/models/ app/styles/ app/utils/ app/views package-lock.json package.json yarn.lock
-		
-		
-		…or create a new repository on the command line
-echo "# TODO-" >> README.md
+…or create a new repository on the command line -
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/pawarnikhild/TODO-.git
 git push -u origin main
-…or push an existing repository from the command line
+
+…or push an existing repository from the command line -
 git remote add origin https://github.com/pawarnikhild/TODO-.git
 git branch -M main
 git push -u origin main
-…or import code from another repository
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Callback function baghne 
+He shiknyasathi onPress pn vyavsthit mahit asn garjech ahe.
+hyanni sadhya js madhe lihilay mhanun run hotay hyanch pn aplyala RN madhe lihay lagtay onPress/onTextChange(onEvent) vr mg tith call kartana adchan yet ahe. Mahatvachi adchan hi ahe ki aplyala onEvent normal function call karaychay jyacha parameter callback function ahe jyala parameter ahet, onEvent View madhe ahe ani logic model madhe.
+JavaScript: Passing parameters to a callback function
+https://stackoverflow.com/questions/3458553/javascript-passing-parameters-to-a-callback-function
+Callback Function With Parameters in JavaScript
+https://www.delftstack.com/howto/javascript/javascript-callback-function-with-parameters/#:~:text=In%20JavaScript%2C%20when%20we%20pass,run%20until%20the%20task%20completes.
+callback function with arguments in react native on onPress
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+if chya aat && condition & sathi ahe ani baher && lihil tr vegla arth ahe ka baghne
+React Native Tutorial #13 Upload Image To Server  music
+
+how to upgrade to windows 11 if notification is not showing
+
+Windows 11 Update Not Showing in Settings (How to Update Windows 10 to 11?) - 2022
+https://www.youtube.com/watch?v=9efjrOXHDXg	
+
+React Native Tutorial #13 Upload Image To Server *music*
+https://www.youtube.com/watch?v=hI7kbY40tcM
+
+
+github commit messgage -
+removed useless handleTask function
+
+    
+console.log("Welcome to Programiz!");
+let pendingTask = [];
+
+
+
+console.log(pendingTask.length)
+if(pendingTask.length == 0) {
+    console.log("empty")
+}
+else {
+    console.log("Not empty")
+}
+
+
+https://dmitripavlutin.com/react-useeffect-explanation/
+
+console.log("Welcome to Programiz!");
+
+const A = [];
+let B = [];
+var C = [];
+var D;
+var Z = {}
+if(Z) {
+    console.log("TRUE");
+} else {
+    console.log("FALSE");
+}
+
+let X = {};
+console.log(A.length);
+console.log(X.length);
+console.log(typeof A);
+console.log(typeof X);
+
+Blob search karne
+optional chaining in react js
+all i need is love tonight remix
+
+
+Githubla code push karne
+
+Github zatt upat karne
+https://www.youtube.com/watch?v=uaeKhfhYE0U
+git origin vs master hindi
+github commit description
+https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li
+
+AwsomeProject dusrust karne
+saglya component core ani iter lagnare componet implement karun thevne
+Permission cha code tayar karun thevne
+Moklya velat clockyfy durust karne
+installing github Simplilearn
+
+how to refresh previous page react native
+https://reactnavigation.org/docs/4.x/navigation-prop#goback---close-the-active-screen-and-move-back
+
+addtask screen baghne
+
+- TaskCard made dynamic.
+- Calculated task status using date in addTask function.
+- Wrote function for sorting tasks using task status.
+- Implemented sortTask function on pending and overdue screen.
+- Shown msg if there is no task on pending and overdue screen.
+- Removed importing handleTask function from all screens.
+- Created experiment folder and some files in it.
+- Minor UI fixes.
+
+git commit -m"Commiting after doing many changes" -m"- TaskCard made dynamic." -m"- Calculated task status using date in addTask function." -m"- Wrote function for sorting tasks using task status." -m"- Implemented sortTask function on pending and overdue screen." -m"- Shown msg if there is no task on pending and overdue screen." -m"- Removed importing handleTask function from all screens." -m"- Created experiment folder and some files in it." -m"- Minor UI fixes."
+
+
+git commit -m"Commiting after doing many changes" -m"- TaskCard made dynamic." -m"- calculated task status using date in addTask function." -m"- wrote function for sorting tasks using task status." -m"- implemented sortTask function on pending and overdue screen." -m"- shown msg if there is no task on pending and overdue screen." -m"- removed importing handleTask function from all screens." -m"- created experiment folder and some files in it." -m"- minor UI fixes."
+
+
+techpark one, tower A near don bosco school off airport road, landmark ritz carlton hotel yarwada pune 11 am

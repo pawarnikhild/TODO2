@@ -1,13 +1,21 @@
-import React from 'react'
-import { SafeAreaView, StatusBar, ScrollView, View, Text, Button } from 'react-native'
+import React from "react";
+import {
+  SafeAreaView,
+  StatusBar,
+  ScrollView,
+  View,
+  Text,
+  Button,
+  FlatList,
+} from "react-native";
 
-import GlobalStyles from '../../styles/GlobalStyles'
-import PendingScreenStyle from '../../styles/pending-screen/PendingScreenStyle'
-import CustomCardContainer from '../../components/CustomCardContainer';
-import TaskCard from '../../components/TaskCard';
+import GlobalStyles from "../../styles/GlobalStyles";
+import PendingScreenStyle from "../../styles/pending-screen/PendingScreenStyle";
+import CustomCardContainer from "../../components/CustomCardContainer";
+import TaskCard from "../../components/TaskCard";
 
 const PendingScreenView = (props) => {
-  const { handleBtnPress, Tasks } = props;
+  const { handleBtnPress, pendingTask } = props;
   return (
     <SafeAreaView style={GlobalStyles.appContainer}>
       <StatusBar />
@@ -16,25 +24,25 @@ const PendingScreenView = (props) => {
         contentContainerStyle={GlobalStyles.scrollViewContentContainerAlt}
       >
         <View>
-          <Text>Text</Text>
-          {Tasks.map((item, index) => (
-            <TaskCard 
-              
-            
-            />
-            // <Text>{item.name}</Text>
-          ))}
-          <CustomCardContainer style={PendingScreenStyle.CustomCardContainer}>
-            <Text>Nikhil Dipakkumar Pawar</Text>
-          </CustomCardContainer>
+          {pendingTask == undefined || pendingTask.length < 0 ? (
+            <Text>No Pending Tasks! Keep it up!</Text>
+          ) : (
+            pendingTask.map((item, index) => (
+              <TaskCard
+                key={index}
+                name={item.name}
+                deadLine={item.deadLine}
+                style={PendingScreenStyle.TaskCard}
+              />
+            ))
+          )}
+
+          {/* <FlatList /> */}
         </View>
-        <Button
-          title="Add a Task"
-          onPress={() => handleBtnPress() }
-        />
+        <Button title="Add a Task" onPress={() => handleBtnPress()} />
       </ScrollView>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default PendingScreenView
+export default PendingScreenView;

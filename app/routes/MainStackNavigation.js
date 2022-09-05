@@ -31,7 +31,7 @@ const MainStackNavigation = () => {
     <TasksContext.Provider value={{Tasks, handleTasks}}>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
-          {/* <Stack.Screen name='Splash' component={SplashScreen} /> */}
+          <Stack.Screen name='Splash' component={SplashScreen} />
           {/* <Stack.Screen name='Login' component={CompleteScreen} /> */}
           <Stack.Screen name='MainTab' component={MainTabNavigation} />
         </Stack.Navigator>

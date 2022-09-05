@@ -7,6 +7,9 @@ export default StyleSheet.create({
     CustomCardContainer: {
         margin: 4,
     },
+    TaskCard: {
+        marginHorizontal: 4,
+    }
 
     
 });

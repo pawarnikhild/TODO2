@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from "react-native-vector-icons/FontAwesome5";
 
 // import CustomCardContainer from "./CustomCardContainer";
 
@@ -9,37 +9,49 @@ const TaskCard = (props) => {
     // <CustomCardContainer>
     //   <Text>TaskCard</Text>
     // </CustomCardContainer>
-    <TouchableOpacity style={{...styles.TaskCard, ...props.style}} onPress={() => {}}>
-        <CustomCardContainer>
-      <View style={styles.row}>
-        <View>
-          <Text style={styles.title}>Study hard</Text>
-          <Text>17-06-2022</Text>
-          {/* <Text style={styles.date}>17-06-2022</Text> */}
+    <TouchableOpacity
+      activeOpacity={0.8}
+      style={{ ...styles.TaskCard, ...props.style }}
+      onPress={() => { console.log('TaskCard pressed!')}}
+    >
+      <CustomCardContainer>
+        <View style={styles.row}>
+          <View>
+            <Text style={styles.title}>{props.name}</Text>
+            <Text>{props.deadLine}</Text>
+            {/* <Text style={styles.date}>17-06-2022</Text> */}
+          </View>
+          <View style={styles.row1}>
+            <TouchableOpacity
+              onPress={() => {
+                console.log("Check button pressed!");
+              }}
+            >
+              <View style={styles.IB}>
+                <Icon
+                  style={styles.Icons}
+                  name="check-circle"
+                  size={35}
+                  color="green"
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                console.log("Cross button pressed!");
+              }}
+            >
+              <View style={styles.IB}>
+                <Icon
+                  style={styles.Icons}
+                  name="times-circle"
+                  size={35}
+                  color="red"
+                />
+              </View>
+            </TouchableOpacity>
+          </View>
         </View>
-        <View style={styles.row1}>
-          <TouchableOpacity onPress={() => {}}>
-            <View style={styles.IB}>
-              <Icon
-                style={styles.Icons}
-                name="check-circle"
-                size={35}
-                color="green"
-              />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => {}}>
-            <View style={styles.IB}>
-              <Icon
-                style={styles.Icons}
-                name="times-circle"
-                size={35}
-                color="red"
-              />
-            </View>
-          </TouchableOpacity>
-        </View>
-      </View>
       </CustomCardContainer>
     </TouchableOpacity>
   );
@@ -59,10 +71,10 @@ const styles = StyleSheet.create({
     // backgroundColor: 'skyblue',
     // backgroundColor: 'grey',
   },
-//   View: {
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
+  //   View: {
+  //     alignItems: "center",
+  //     justifyContent: "center",
+  //   },
   title: {
     fontSize: 22,
   },
@@ -82,7 +94,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     // margin: 5,
     marginTop: 5,
-    marginLeft: 10
+    marginLeft: 10,
     // color: "green"
   },
 });

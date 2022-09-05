@@ -9,11 +9,14 @@ import MainTabNavigation from './app/routes/MainTabNavigation';
 import AddTaskScreen from './app/models/add-task-screen/AddTaskScreen';
 import DatePicker from './app/components/DatePicker';
 import StateExperiment from './app/experiments/StateExperiment';
+import Dimension from './app/experiments/Dimension';
+import Experiment from './app/experiments/Experiment';
 import CallAndTest from './app/experiments/CallAndTest';
+
 
 export default function App() {
   return (
-    // <MainStackNavigation />
+    <MainStackNavigation />
     
     // <SplashScreen />
     // <SplashScreenView />
@@ -21,6 +24,8 @@ export default function App() {
     // <AddTaskScreen />
     // <DatePicker/>
     // <StateExperiment />
-    <CallAndTest />
+    // <Dimension />
+    // <Experiment />
+    // <CallAndTest />
   );
 }
