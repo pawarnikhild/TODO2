@@ -14,7 +14,7 @@ const OverdueScreen = ({ navigation }) => {
   const [overdueTasks, setOverdueTasks] = useState([])
   
   useEffect(() => {
-    console.log('OverdueScreen useEffect');
+    // console.log('OverdueScreen useEffect');
     let tempOverdueTasks = sortTask(Tasks, 'overdue');
     setOverdueTasks(tempOverdueTasks);
   }, [Tasks.length]);
@@ -23,8 +23,8 @@ const OverdueScreen = ({ navigation }) => {
     navigation.navigate('AddTaskScreen');
   }
 
-  console.log('Tasks in overdueScreen', Tasks)
-  console.log('overdueTasks', overdueTasks)
+  // console.log('Tasks in overdueScreen', Tasks)
+  // console.log('overdueTasks', overdueTasks)
   return (
     <OverdueScreenView
       overdueTasks={overdueTasks}

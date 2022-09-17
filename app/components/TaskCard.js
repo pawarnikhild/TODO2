@@ -38,6 +38,7 @@ const TaskCard = (props) => {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => {
+                props.onCross();
                 console.log("Cross button pressed!");
               }}
             >

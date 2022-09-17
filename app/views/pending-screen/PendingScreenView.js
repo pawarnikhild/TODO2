@@ -15,7 +15,7 @@ import CustomCardContainer from "../../components/CustomCardContainer";
 import TaskCard from "../../components/TaskCard";
 
 const PendingScreenView = (props) => {
-  const { handleBtnPress, pendingTask } = props;
+  const { pendingTask, handleBtnPress, currentRemoveTask } = props;
   return (
     <SafeAreaView style={GlobalStyles.appContainer}>
       <StatusBar />
@@ -33,6 +33,8 @@ const PendingScreenView = (props) => {
                 name={item.name}
                 deadLine={item.deadLine}
                 style={PendingScreenStyle.TaskCard}
+                onCross={() => currentRemoveTask(item.id)}
+                // onCheck={}
               />
             ))
           )}
